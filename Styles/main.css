@@ -1,3 +1,6 @@
 body {
     background-color: rgb(90, 122, 158);
 }
+.bookcover {
+    height: 200px;
+}
