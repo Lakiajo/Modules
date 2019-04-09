@@ -1,7 +1,7 @@
 const bookInfo = {
     price: 24.99,
     title: 'Fifty Shades of Chicken',
-    image: './assets/fifty.jpg'
+    image: './assets/blood.jpg'
 };
 const getBook = () => {
     return bookInfo;
