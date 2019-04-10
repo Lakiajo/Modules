@@ -1,10 +1,13 @@
 import book from '../helpers/book.js';
 import util from '../helpers/util.js';
+import cart from './cart.js';
 
 const addToCartEvent = (e) => {
     e.preventDefault();
     const bookInfo = book.getBook();
-    console.log('book:', bookInfo);
+    cart.setCart(bookInfo);
+    cart.cartToDom();
+    // console.log('book:', bookInfo);
 };
 
 const makeStore = () => {
@@ -17,5 +20,5 @@ util.printToDom('store-container',domString);
 document.getElementById('cartbutton').addEventListener('click',addToCartEvent);
 };
 
-export default {makeStore};
+export default { makeStore };
 
