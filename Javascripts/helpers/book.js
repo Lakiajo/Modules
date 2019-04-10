@@ -1,6 +1,6 @@
 const bookInfo = {
     price: 24.99,
-    title: 'Fifty Shades of Chicken',
+    title: 'Children of Blood and Bone',
     image: './assets/blood.jpg'
 };
 const getBook = () => {
